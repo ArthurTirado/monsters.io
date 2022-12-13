@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>monster.io</title>
+</head>
+<body>
+    <div id="page">
+        <header class="flexBox">
+            <div>
+                <a href="index.html">
+                    <button id="logo">
+                        <img src="img/icon.svg" alt="Monsters.io logo">
+                    </button>
+                </a>
+                <span class="bold">monsters.io</span>
+            </div>
+            <a href="about.html">
+                <button id="about">?</button>
+            </a>
+            
+        </header>
+        <main>
+            
+            <h1>Nouvelle carte</h1>
+
+           <div id="menu" class="flexBox">
+                <form action="" method="post" class="flexBox" id="monsterCreation" novalidate>
+                    <div>
+                        <input class="bold" type="text" id="cardTitle" placeholder="Nom du monstre">
+                        <textarea name="description" id="cardDescription" rows="5" placeholder="Description du monstre..."></textarea>
+                    </div>
+                    <div id="monsterStats">
+                        <div>
+                        <span class="roundBorder">
+                            <label for="attack"><img src="img/blade.svg" alt="Sword icon"></label>
+                            <input type="text" class="cardStat" id="attack" value="0">
+                        </span>
+
+                       <span class="plus">+</span> 
+                        <span class="roundBorder" >
+                            <label for="defence"><img src="img/sheild.svg" alt="Shield icon"></label>
+                            <input type="text" class="cardStat" id="defence" value="0">
+                        </span>
+
+                       <span class="plus">+</span>
+                        <span class="roundBorder" >
+                            <label for="life"><img src="img/heart.svg" alt="Heart image"></label>
+                            <input type="text" class="cardStat" id="life" value="0">
+                        </span>
+
+                        <span class="plus">=</span>
+                        <span id="statsResult" class="roundBorder">0/10</span>
+                       </div>
+                        <div id="monsterSelect">
+                            <input type="radio" id="unicornMonster" name="monsterType" value="1" checked>
+                            <label for="unicornMonster"><img src="img/monster1.png" alt="unicornMonster"></label>
+
+                            <input type="radio" id="jellyMonster" name="monsterType" value="2">
+                            <label for="jellyMonster"><img src="img/monster2.png" alt="jellyMonster"></label>
+
+                            <input type="radio" id="bombMonster" name="monsterType" value="3">
+                            <label for="bombMonster"><img src="img/monster3.png" alt="bombMonster"></label>
+
+                            <input type="radio" id="sixEyedMonster" name="monsterType" value="4">
+                            <label for="sixEyedMonster"><img src="img/monster4.png" alt="sixEyedMonster"></label>
+
+                            <input type="radio" id="cloudMonster" name="monsterType" value="5">
+                            <label for="cloudMonster"><img src="img/monster5.png" alt="cloudMonster"></label>
+                        </div>
+                        <div id="monsterColors">
+                            <input type="radio" id="light" class="light" name="cardColor" value="light" checked>
+                            <input type="radio" id="red" class="red" name="cardColor" value="red">
+                            <input type="radio" id="orange" class="orange" name="cardColor" value="orange">
+                            <input type="radio" id="yellow" class="yellow" name="cardColor" value="yellow">
+                            <input type="radio" id="green" class="green" name="cardColor" value="green">
+                            <input type="radio" id="blue" class="blue" name="cardColor" value="blue">
+                        </div>
+                        <ul id="errorMessage">
+                            
+                        </ul>
+                        <button type="submit" id="submitButton">Créer</button>
+
+                        
+                    </div>
+                    
+                       
+                    
+                    
+                </form>
+                
+                <section class="light" id="boss" >
+                    <div class="flexBox" id="bossLevelLine">
+                        <span class="monsterName">Boss</span>
+                        <select name="bossLevel" id="bossLevel">
+                            <option value="none" disabled >   </option>
+                            <option value="easy" >Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                            <option value="impossible">Impossible</option>
+                        </select>
+                    </div>
+                    <img src="img/monster-boss.png" alt="Image of Boss">
+                    <p id="bossInfo">Cette boss est pas très habile dans l'art de la bataille. Il est le plus facile, ideal pour les debutants</p>
+                    <div class="flexBox">
+                        <img src="img/blade.svg" alt="Attack points"><span class="attackPoints">2</span>
+                        <img src="img/sheild.svg" alt="Defence points"><span class="defencePoints">2</span>
+                        <img src="img/heart.svg" alt="Health points"><span class="healthPoints">10</span>
+                    </div>
+                    
+                </section>
+                
+           </div>
+           
+
+            <section>
+                <h2>Cartes</h2>
+                <div class="gridBox" id="monsterList">
+                   
+                </div>
+            </section>
+
+            
+        </main>
+        <footer>
+            <div>Copyright © 2022 Arthur Megiolaro Tirado et Nikita Liubychenko</div>
+        </footer>
+    </div>
+</body>
+</html>

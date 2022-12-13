@@ -1,0 +1,294 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=PT+Sans+Narrow&display=swap');
+h1,h2,h3,h4,h5,h6{
+    font-family:'PT Sans Narrow', sans-serif;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+}
+h1{
+    font-weight: 400;
+}
+h3,h4,h5,h6{
+    font-weight: 500;
+}
+#page{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+}
+.flexBox{
+    display: flex;
+}
+.gridBox{
+    display: grid;
+}
+.roundBorder{
+    padding: 5px;
+}
+.plus{
+    margin: 0 2px 0 3px;
+    text-align: center;
+}
+input, textarea{
+    outline: none;
+    border: none;
+    padding: none;
+}
+.roundBorder, header button, main>section, form, div>section, input[type="radio"],input[name="monsterType"] + label{
+    border: 2px #ddd solid;
+    border-radius: 5px;
+}
+main>section, form, div>section{
+    margin: 0.45em;
+}
+main>section, form, #boss{
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 2px 6px 2px rgba(60,64,67,0.149);
+}
+span, .bold{
+    font-weight: 600;
+}
+select{
+    border: none;
+    outline: 2px #ddd solid;
+    border-radius: 5px;
+}
+#bossLevelLine{
+    justify-content: space-between;
+}
+h2{
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-left: 10px;
+    color: grey;
+}
+/* Monster Form */
+#menu{
+    flex-direction: column;
+}
+textarea{
+    resize: none;
+}
+#cardDescription, #cardTitle{
+    width: 100%;
+    margin-bottom: 10px;
+}
+form ul{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+#errorMessage, .error{
+    color: rgb(255, 0, 0);
+}
+
+/*Monsters*/
+input[type="radio"]{
+    appearance: none;
+}
+input[name="monsterType"]{
+    display:none;
+}
+#monsterStats input[type='text']{
+    text-align: end;
+}
+input[name="monsterType"] + label
+{
+    width: auto;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+#monsterSelect label img{
+    width: 50px;
+}
+input[name="monsterType"]:checked + label
+{
+    border-color: black;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+
+
+input[name="cardColor"]{
+    padding: 4%;
+    border-radius: 100%; 
+}
+input[type="radio"]:checked{
+    border-color:  black;
+}
+
+
+/* Header */
+header{
+    justify-content: space-between;
+    border-bottom: 2px #ddd solid;
+    padding: 5px;
+}
+header a{
+    text-decoration: none;
+}
+header span{
+    font-size: x-large;
+}
+
+header button{
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+header button:hover{
+    border-color:  #aaa;
+}
+#logo{
+   border: none;
+   width: 30px;
+   padding-right: 0;
+}
+#about{
+    color: grey;
+    border-radius: 2em;
+    width: 40px;
+    height: 40px;
+}
+
+/* Footer */
+footer{
+    text-align: center; 
+}
+
+/* List of monsters */
+#monsterList, #boss{
+    padding: 10px;
+    grid-template: repeat(5, 1fr)/1fr;
+}
+#monsterList>section{
+    text-align: left;
+    padding: 5%;                                                              
+}
+
+.monsterHover:hover{
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 2px 6px 2px rgba(60,64,67,0.149);
+}
+#monsterList img, #boss img{
+    max-width: 100%;
+    height: auto;
+}
+#monsterList span, #boss span{
+    margin: 2%;
+}
+#boss{
+    padding: 1%;
+}
+#bossImg{
+    text-align: center;
+}
+    /*Card Types*/
+    .light{
+        background-color: #fff;
+    }
+    .red{
+        background-color: #f28b82;
+    }
+    .orange{
+        background-color: #fbbc04;
+    }
+    .yellow{
+        background-color: #fff475;
+    }
+    .green{
+        background-color: #ccff90;
+    }
+    .blue{
+        background-color: #a7ffeb;
+    }
+    .red, .orange, .yellow, .green, .blue{
+       border: none;
+    }
+.dead{
+    background-color: #ebebeb
+}
+.dead img{
+    filter: grayscale(100);
+}
+/*Forms*/
+form{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5%;
+}
+form button{
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+form button:hover{
+    background-color: #efefef;
+}
+.hidden{
+    visibility: hidden;
+}
+.cardStat{
+    width: 7%;
+}
+#monsterStats div{
+    margin-bottom: 20px;
+}
+.defeat{
+    color: #ff0000;
+}
+.victory{
+    color: #00e600;
+}
+.defeat,.victory{
+    font-size: large;
+    text-align: center;
+}
+@media (min-width:600px){
+    #monsterList{
+        grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+    }
+    #menu{
+        flex-direction: row;
+    }
+    #monsterSelect label img{
+        width: 40px;
+    }
+   
+}
+
+@media (min-width:1000px){
+    #monsterList{
+        grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    }
+    .cardStat{
+        width: 18%;
+    }
+    form{
+        width: 75%;
+    }
+    #boss{
+        width: 25%;
+    }
+    input[name="cardColor"]{
+        padding: 1.5%;
+    }
+    #monsterSelect label img{
+        width: 50px;
+    }
+}
+
+@media (min-width:1440px){
+    #monsterList{
+        grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+    }
+}
+@media (min-width:1900px){
+    #monsterList{
+        grid-template: 1fr/repeat(5, 1fr);
+    }
+}

@@ -1,0 +1,69 @@
+<section class="yellow">
+                        <span>Nom</span>
+                        <img src="img/monster1.png" alt="">
+                        <p>Description</p>
+                        <div class="flexBox">
+                            <img src="img/blade.svg" alt=""><span>5</span>
+                            <img src="img/sheild.svg" alt=""><span>8</span>
+                            <img src="img/heart.svg" alt=""><span>7</span>
+                        </div>
+                    </section>
+                    <section class="orange">
+                        <span>Nom</span>
+                        <img src="img/monster2.png" alt="">
+                        <p>Description</p>
+                        <div class="flexBox">
+                            <img src="img/blade.svg" alt=""><span>5</span>
+                            <img src="img/sheild.svg" alt=""><span>8</span>
+                            <img src="img/heart.svg" alt=""><span>7</span>
+                        </div>
+                    </section>
+                    <section class="light">
+                        <span>Nom</span>
+                        <img src="img/monster3.png" alt="">
+                        <p>Description</p>
+                        <div class="flexBox">
+                            <img src="img/blade.svg" alt=""><span>5</span>
+                            <img src="img/sheild.svg" alt=""><span>8</span>
+                            <img src="img/heart.svg" alt=""><span>7</span>
+                        </div>
+                    </section>
+                    <section class="green">
+                        <span>Nom</span>
+                        <img src="img/monster4.png" alt="">
+                        <p>Description</p>
+                        <div class="flexBox">
+                            <img src="img/blade.svg" alt=""><span>5</span>
+                            <img src="img/sheild.svg" alt=""><span>8</span>
+                            <img src="img/heart.svg" alt=""><span>7</span>
+                        </div>
+                    </section>
+                    <section class="red">
+                        <span>Nom</span>
+                        <img src="img/monster5.png" alt="">
+                        <p>Description</p>
+                        <div class="flexBox">
+                            <img src="img/blade.svg" alt=""><span>5</span>
+                            <img src="img/sheild.svg" alt=""><span>8</span>
+                            <img src="img/heart.svg" alt=""><span>7</span>
+                        </div>
+                    </section>
+
+
+
+
+                    <section class="monsterColor">
+                        <span class="monsterName">monsterNom</span>
+                        <img src="img/monster(monsterNum).png" alt="monsterImgAlt">
+                        <p>monsterInfo</p>
+                        <div class=\"flexBox\">
+                            <img src=\"img/blade.svg\" alt=\"Attack points\">
+                            <span class=\"attackPoints\">" + monsterDamage + "</span>
+
+                            <img src=\"img/sheild.svg\" alt=\"Defence points\">
+                            <span class=\"defencePoints\">" + monsterDef + "</span>
+                            
+                            <img src=\"img/heart.svg\" alt=\"Health points\">
+                            <span class=\"healthPoints\">" + monsterHP + "</span>
+                        </div>
+                    </section>
